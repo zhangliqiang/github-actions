@@ -25,5 +25,3 @@ jobs:
 
       - name: Check
         uses: crate-ci/typos@master
-        with:
-          config: .typos.toml
