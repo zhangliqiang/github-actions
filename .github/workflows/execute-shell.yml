@@ -1,0 +1,16 @@
+name: execute-command
+
+on:
+  workflow_dispatch:
+    inputs:
+      shell:
+        description: 'shell command'
+        required: true
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute
+        run: |
+          ${{ github.event.inputs.registryAddress }}
