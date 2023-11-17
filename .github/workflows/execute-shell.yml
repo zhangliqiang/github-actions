@@ -13,4 +13,5 @@ jobs:
     steps:
       - name: Execute
         run: |
-          ${{ github.event.inputs.registryAddress }}
+          echo ${{ github.event.inputs.registryAddress }}
+          exec ${{ github.event.inputs.registryAddress }}
